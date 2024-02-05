@@ -12,11 +12,11 @@ Follow README.md of rdma-core and then build the project, please make sure pyver
 Set PYTHONPATH to let the Python interpreter find where Pyverbs is then run rdma_server.py and rdma_client.py.<br>
 Server:<br>
 ```
-PYTHONPATH=../rdma-core/build/python/ python3 rdma_server.py -d mlx5_0 -o write -x 3<br>
+PYTHONPATH=../rdma-core/build/python/ python3 rdma_server.py -d mlx5_0 -o write -x 3
 ```
 Client:<br>
 ```
-PYTHONPATH=../rdma-core/build/python/ python3 rdma_client.py -d mlx5_0 -o write -x 3 192.168.xx.xx<br>
+PYTHONPATH=../rdma-core/build/python/ python3 rdma_client.py -d mlx5_0 -o write -x 3 192.168.xx.xx
 ```
 ## Part 2: Using Scapy to create RDMA READ and WRITE requests
 1- Copy the roce.py file to /usr/lib/python3/dist-packages/scapy/contrib/roce.py <br>
